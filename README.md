@@ -52,7 +52,8 @@ Non-Git Files
 Some files are not git-trackable because they are in binary (non-text) form, because they are very large and would consume too much space, or because their raw data is meaningless and would produce unintelligible git diffs.
 Be sure to include these files in the `.gitignore` so that they are automatically not synchronized with the repository.
 To handle these files, store them somewhere else, such as Google Drive, and then include a bash stript for downloading the data.
-An example script is included in the `inputData/` directory called `getData.sh`
+An example script is included in the `inputData/` directory called `getData.sh` (the script does not actually work, but has the commands needed for downloading data from Google Drive).
+Once the data is downloaded, it should either be automatically moved to the correct directory or remain in the `inputData/` folder and be properly referenced when required.
 
 Dependencies
 ------------
