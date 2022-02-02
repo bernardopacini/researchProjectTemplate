@@ -6,15 +6,21 @@ The aim of this template is to provide a standardized way of working on a projec
 The data in this repository should include all the necessary files, properly configured, to run all of the cases presented in the work, for example to reproduce results in a paper.
 The documentation in this repository should provide guidance for every step of the work, from pre-processing, to solving, to post-processing.
 
+Documentation
+-------------
+
+The documentation for the project should be written using reStructuredText and the Sphinx package.
+This will make the documentation easy to visualize in either PDF or website form so that someone can easily open it and follow the steps in the work.
+
 To generate the documentation, ensure you have a working Python3 installation with `sphinx` and `sphinx-prompt` installed.
-Navigate to the `/doc/` directory and execute:
+Navigate to the `doc/` directory and execute:
 
 ```
 make html
 open build/html/index.html
 ```
 
-To use this template, create a new repository using this template and adjust the fields as necessary.
+When starting a new project with this template, be sure to adjust the Sphinx `conf.py` file and input the correct project details.
 
 Repository Structure
 --------------------
@@ -63,12 +69,18 @@ Include them here and note if they are necessary or not.
 The order is arbitrary, but if there is a convenient way of ordering them it can be helpful for users.
 For this template, we need only:
 
-- Python3
-- Sphinx
+* Python3
+* Sphinx
 
 Contributors
 ------------
 
 List the contributors to the project here, starting with those who did the most work and decreasing through the list.
 
-- Bernardo Pacini
+* Bernardo Pacini
+
+Additional Notes
+----------------
+
+* As the project is ongoing, there may be many added or removed files, bloating the repository's history.
+It may be worthwhile working on a `develop` branch and only committing the completed project to `master` once it has reached a mature state.
